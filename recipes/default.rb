@@ -27,6 +27,3 @@ when "debian"
   
 end
 
-Chef::Log.info("HELLO from hostname: #{node['hostname']} with FQDN: #{node['fqdn']}")
-
-
