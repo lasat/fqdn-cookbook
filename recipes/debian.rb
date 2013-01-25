@@ -33,6 +33,7 @@ if node.name.split('.').count <=2 then
   fqdn=hostname
 end
 
+
 replace_or_add "ipv4 localhost hosts entry" do
   path "/etc/hosts"
   pattern "127.0.0.1.*"
@@ -59,7 +60,7 @@ file "/etc/hostname" do
   owner "root"
   content "localhost\n"
   not_if "/usr/bin/test -f /etc/hostname"
-end.run_action(:create)
+end
 
 replace_or_add "debian network hostname" do
   path "/etc/hostname"
@@ -83,3 +84,4 @@ ohai "reload_fqdn" do
   action :nothing
   plugin "fqdn"
 end
+
