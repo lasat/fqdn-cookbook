@@ -1,16 +1,17 @@
 # fqdn cookbook
 
 # Description
-blah blah blah fqdns are annoying.
+Include this recipe in your run_list, and it will make sure that your
+node has a properly configured FQDN. It is opinionated, so that your
+hostname equals your FQDN like Bob intended. You can override this
+behavior by setting the attribute 'fqdn_as_hostname' to false.
 
 # Requirements
 line cookbook
+hostsfile cookbook
 
 # Usage
-in a base role, somewhere between selinux and ntp.
-
-# Issues
-run_context and compilation phase.
+Include the default recipe in a base role or wrapper recipe, somewhere between selinux and ntp.
 
 # Attributes
 default['fqdn_as_hostname']=true
