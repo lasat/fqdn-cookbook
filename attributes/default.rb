@@ -1,1 +1,1 @@
-default['fqdn_as_hostname']=true
+default['fqdn_as_hostname'] = true
