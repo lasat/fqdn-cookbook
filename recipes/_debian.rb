@@ -18,19 +18,6 @@
 # limitations under the License.
 #
 
-# Calculate hostname and FQDN based on the node.name
-
-if node.name.split('.').count >= 3
-  dnsdomainname = node.name.split('.').pop(2).join('.')
-  hostname = node.name.split('.')[0..(node.name.split('.').count - 3)].join('.')
-  fqdn = [hostname, dnsdomainname].join('.')
-  hostname = fqdn if node['fqdn_as_hostname']
-end
-
-if node.name.split('.').count <= 2
-  hostname = node.name
-  fqdn = hostname
-end
 
 hostsfile_entry '127.0.0.1' do
   hostname  fqdn

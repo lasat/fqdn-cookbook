@@ -18,6 +18,53 @@
 # limitations under the License.
 #
 
+# Calculate hostname and FQDN based on the node.name
+# If set via an attribute, calculate based on that.
+# Otherwise, derive from the chef nodename.
+
+require 'pry'
+
+unless node['custom_fqdn'].nil?
+  if node['custom_fqdn'].split('.').count >= 3
+    dnsdomainname = node['custom_fqdn'].split('.').pop(2).join('.')
+    hostname = node['custom_fqdn'].split('.')[0..(node['custom_fqdn'].split('.').count - 3)].join('.')
+    fqdn = [hostname, dnsdomainname].join('.')
+    hostname = fqdn if node['fqdn_as_hostname']
+  end
+
+  if node['custom_fqdn'].split('.').count == 2
+    hostname = node['custom_fqdn']
+    fqdn = hostname
+  end
+
+  if node['custom_fqdn'].split('.').count == 1
+    hostname = "#{node['fqdn']}.example.com"
+    fqdn = hostname
+  end
+else
+  if node.name.split('.').count >= 3
+    dnsdomainname = node.name.split('.').pop(2).join('.')
+    hostname = node.name.split('.')[0..(node.name.split('.').count - 3)].join('.')
+    fqdn = [hostname, dnsdomainname].join('.')
+    hostname = fqdn if node['fqdn_as_hostname']
+  end
+
+  if node.name.split('.').count == 2
+    hostname = node.name
+    fqdn = hostname
+  end
+
+  if node.name.split('.').count == 1
+    hostname = "#{node.name}.example.com"
+    fqdn = hostname
+  end
+end
+
+binding.pry
+
+Chef::Log.info("hostname: #{hostname}")
+Chef::Log.info("fqdn: #{fqdn}")
+
 case node['platform_family']
 
 when 'rhel'

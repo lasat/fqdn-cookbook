@@ -87,3 +87,4 @@ suites:
   - name: default
     run_list:
       - recipe[fqdn::default]
+    attributes: { custom_fqdn: test.example.com }
