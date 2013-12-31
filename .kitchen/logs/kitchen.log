@@ -386,3 +386,308 @@ E, [2013-12-30T13:30:36.342632 #13251] ERROR -- Kitchen: /Users/someara/.rvm/gem
 E, [2013-12-30T13:30:36.342660 #13251] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
 E, [2013-12-30T13:30:36.342687 #13251] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
 E, [2013-12-30T13:30:36.342716 #13251] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T15:15:05.587183 #2138]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T15:15:06.307235 #2138]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T15:15:35.784863 #2138] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-30T15:15:35.784968 #2138] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-30T15:15:35.785025 #2138] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-12-30T15:15:35.785073 #2138] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-30T15:15:35.785119 #2138] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-30T15:15:35.785150 #2138] ERROR -- Kitchen: Message: exit
+E, [2013-12-30T15:15:35.785179 #2138] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-30T15:15:35.785207 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-30T15:15:35.785252 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-30T15:15:35.785287 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-30T15:15:35.785326 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-30T15:15:35.785360 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-30T15:15:35.785416 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-30T15:15:35.785486 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-30T15:15:35.785529 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T15:15:35.785559 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T15:15:35.785589 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-30T15:15:35.785618 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-30T15:15:35.785648 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-30T15:15:35.785678 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2013-12-30T15:15:35.785707 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-30T15:15:35.785736 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2013-12-30T15:15:35.785765 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2013-12-30T15:15:35.785794 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-30T15:15:35.785823 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-30T15:15:35.785853 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-30T15:15:35.785882 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-30T15:15:35.785911 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-30T15:15:35.785940 #2138] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T15:15:35.785970 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-30T15:15:35.785999 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-30T15:15:35.786036 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-30T15:15:35.786077 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-30T15:15:35.786107 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-30T15:15:35.786145 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-30T15:15:35.786173 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:119:in `converge'
+E, [2013-12-30T15:15:35.786201 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-30T15:15:35.786229 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-30T15:15:35.786258 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-30T15:15:35.786285 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-30T15:15:35.786313 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-30T15:15:35.786339 #2138] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T15:15:35.786364 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-30T15:15:35.786391 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-30T15:15:35.786417 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-30T15:15:35.786444 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-30T15:15:35.786472 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-30T15:15:35.786498 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-30T15:15:35.786526 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-30T15:15:35.786552 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-30T15:15:35.786579 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-30T15:15:35.786606 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-30T15:15:35.786632 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
+E, [2013-12-30T15:15:35.786660 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
+E, [2013-12-30T15:15:35.786687 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-12-30T15:15:35.786714 #2138] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-12-30T15:15:35.786741 #2138] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T17:22:34.211148 #3106]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T17:22:34.954610 #3106]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T17:39:45.896559 #3106] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-30T17:39:45.896690 #3106] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-30T17:39:45.896752 #3106] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-12-30T17:39:45.896807 #3106] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-30T17:39:45.896862 #3106] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-30T17:39:45.896917 #3106] ERROR -- Kitchen: Message: exit
+E, [2013-12-30T17:39:45.896969 #3106] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-30T17:39:45.897021 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-30T17:39:45.897075 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-30T17:39:45.897129 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-30T17:39:45.897182 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-30T17:39:45.897234 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-30T17:39:45.897287 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-30T17:39:45.897341 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-30T17:39:45.897393 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T17:39:45.897445 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T17:39:45.897497 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-30T17:39:45.897549 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-30T17:39:45.897602 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-30T17:39:45.897642 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2013-12-30T17:39:45.897673 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-30T17:39:45.897703 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2013-12-30T17:39:45.897733 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2013-12-30T17:39:45.897762 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-30T17:39:45.897790 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-30T17:39:45.897819 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-30T17:39:45.897849 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-30T17:39:45.897894 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-30T17:39:45.897925 #3106] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T17:39:45.897955 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-30T17:39:45.897984 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-30T17:39:45.898013 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-30T17:39:45.898049 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-30T17:39:45.898091 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-30T17:39:45.898122 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-30T17:39:45.898153 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:119:in `converge'
+E, [2013-12-30T17:39:45.898183 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-30T17:39:45.898213 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-30T17:39:45.898256 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-30T17:39:45.898306 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-30T17:39:45.898352 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-30T17:39:45.898390 #3106] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T17:39:45.898426 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-30T17:39:45.898462 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-30T17:39:45.898499 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-30T17:39:45.898546 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-30T17:39:45.898581 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-30T17:39:45.898610 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-30T17:39:45.898640 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-30T17:39:45.898669 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-30T17:39:45.898698 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-30T17:39:45.898726 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-30T17:39:45.898765 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
+E, [2013-12-30T17:39:45.898796 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
+E, [2013-12-30T17:39:45.898826 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-12-30T17:39:45.898856 #3106] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-12-30T17:39:45.898886 #3106] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T17:51:24.634081 #3175]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T17:51:25.333158 #3175]  INFO -- Kitchen: -----> Destroying <default-centos-58>...
+I, [2013-12-30T17:51:26.149843 #3175]  INFO -- Kitchen: -----> Kitchen is finished. (0m1.52s)
+I, [2013-12-30T17:51:36.614606 #3177]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T17:51:37.286190 #3177]  INFO -- Kitchen: -----> Creating <default-centos-58>...
+I, [2013-12-30T17:52:53.878138 #3177]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T17:56:26.905089 #3177] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-30T17:56:26.905162 #3177] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-30T17:56:26.905209 #3177] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-12-30T17:56:26.905264 #3177] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-30T17:56:26.905313 #3177] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-30T17:56:26.905364 #3177] ERROR -- Kitchen: Message: exit
+E, [2013-12-30T17:56:26.905413 #3177] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-30T17:56:26.905467 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-30T17:56:26.905512 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-30T17:56:26.905559 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-30T17:56:26.905606 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-30T17:56:26.905657 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-30T17:56:26.905702 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-30T17:56:26.905747 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-30T17:56:26.905794 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T17:56:26.905840 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T17:56:26.905884 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-30T17:56:26.905932 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-30T17:56:26.905979 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-30T17:56:26.906009 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2013-12-30T17:56:26.906035 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-30T17:56:26.906091 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2013-12-30T17:56:26.906122 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2013-12-30T17:56:26.906151 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-30T17:56:26.906188 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-30T17:56:26.906214 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-30T17:56:26.906240 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-30T17:56:26.906266 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-30T17:56:26.906292 #3177] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T17:56:26.906318 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-30T17:56:26.906344 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-30T17:56:26.906370 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-30T17:56:26.906396 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-30T17:56:26.906422 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-30T17:56:26.906448 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-30T17:56:26.906474 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:119:in `converge'
+E, [2013-12-30T17:56:26.906500 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-30T17:56:26.906526 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-30T17:56:26.906552 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-30T17:56:26.906578 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-30T17:56:26.906604 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-30T17:56:26.906630 #3177] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T17:56:26.906655 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-30T17:56:26.906681 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-30T17:56:26.906707 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-30T17:56:26.906740 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-30T17:56:26.906767 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-30T17:56:26.906793 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-30T17:56:26.906820 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-30T17:56:26.906845 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-30T17:56:26.906871 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-30T17:56:26.906897 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-30T17:56:26.906923 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
+E, [2013-12-30T17:56:26.906948 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
+E, [2013-12-30T17:56:26.906975 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-12-30T17:56:26.907001 #3177] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-12-30T17:56:26.907027 #3177] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T18:01:56.873419 #6437]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T18:01:57.550243 #6437]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T18:02:16.429951 #6437] ERROR -- Kitchen: Converge failed on instance <default-centos-58>.
+I, [2013-12-30T18:03:36.770984 #6564]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T18:03:37.432344 #6564]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T18:05:19.551041 #6564] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-30T18:05:19.551130 #6564] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-30T18:05:19.551164 #6564] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-12-30T18:05:19.551193 #6564] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-30T18:05:19.551221 #6564] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-30T18:05:19.551249 #6564] ERROR -- Kitchen: Message: exit
+E, [2013-12-30T18:05:19.551276 #6564] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-30T18:05:19.551305 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-30T18:05:19.551334 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-30T18:05:19.551362 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-30T18:05:19.551390 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-30T18:05:19.551418 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-30T18:05:19.551445 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-30T18:05:19.551473 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-30T18:05:19.551501 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T18:05:19.551540 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T18:05:19.551570 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-30T18:05:19.551599 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-30T18:05:19.551627 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-30T18:05:19.551655 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2013-12-30T18:05:19.551684 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-30T18:05:19.551711 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2013-12-30T18:05:19.551739 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2013-12-30T18:05:19.551767 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-30T18:05:19.551795 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-30T18:05:19.551823 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-30T18:05:19.551851 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-30T18:05:19.551879 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-30T18:05:19.551907 #6564] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T18:05:19.551936 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-30T18:05:19.551965 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-30T18:05:19.551994 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-30T18:05:19.552022 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-30T18:05:19.552050 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-30T18:05:19.552078 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-30T18:05:19.552107 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:119:in `converge'
+E, [2013-12-30T18:05:19.552136 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-30T18:05:19.552165 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-30T18:05:19.552203 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-30T18:05:19.552233 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-30T18:05:19.552262 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-30T18:05:19.552290 #6564] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T18:05:19.552317 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-30T18:05:19.552350 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-30T18:05:19.552380 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-30T18:05:19.552408 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-30T18:05:19.552437 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-30T18:05:19.552465 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-30T18:05:19.552494 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-30T18:05:19.552532 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-30T18:05:19.552559 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-30T18:05:19.552586 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-30T18:05:19.552612 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
+E, [2013-12-30T18:05:19.552639 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
+E, [2013-12-30T18:05:19.552666 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-12-30T18:05:19.552693 #6564] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-12-30T18:05:19.552720 #6564] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T18:11:55.669109 #10437]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T18:11:56.391089 #10437]  INFO -- Kitchen: -----> Converging <default-centos-58>...
+E, [2013-12-30T18:13:34.835298 #10437] ERROR -- Kitchen: ------Exception-------
+E, [2013-12-30T18:13:34.835381 #10437] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2013-12-30T18:13:34.835414 #10437] ERROR -- Kitchen: Message: Failed to complete #converge action: [exit]
+E, [2013-12-30T18:13:34.835442 #10437] ERROR -- Kitchen: ---Nested Exception---
+E, [2013-12-30T18:13:34.835470 #10437] ERROR -- Kitchen: Class: SystemExit
+E, [2013-12-30T18:13:34.835497 #10437] ERROR -- Kitchen: Message: exit
+E, [2013-12-30T18:13:34.835525 #10437] ERROR -- Kitchen: ------Backtrace-------
+E, [2013-12-30T18:13:34.835552 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `exit'
+E, [2013-12-30T18:13:34.835580 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:6:in `block in <top (required)>'
+E, [2013-12-30T18:13:34.835609 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `call'
+E, [2013-12-30T18:13:34.835649 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `select'
+E, [2013-12-30T18:13:34.835678 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/ruby_compat.rb:30:in `io_select'
+E, [2013-12-30T18:13:34.835706 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:209:in `process'
+E, [2013-12-30T18:13:34.835734 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `block in loop'
+E, [2013-12-30T18:13:34.835762 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T18:13:34.835790 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/net-ssh-2.7.0/lib/net/ssh/connection/session.rb:169:in `loop'
+E, [2013-12-30T18:13:34.835819 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:163:in `exec_with_exit'
+E, [2013-12-30T18:13:34.835846 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:54:in `exec'
+E, [2013-12-30T18:13:34.835874 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:108:in `run_remote'
+E, [2013-12-30T18:13:34.835907 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
+E, [2013-12-30T18:13:34.835936 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
+E, [2013-12-30T18:13:34.835963 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
+E, [2013-12-30T18:13:34.835991 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
+E, [2013-12-30T18:13:34.836018 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
+E, [2013-12-30T18:13:34.836046 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
+E, [2013-12-30T18:13:34.836074 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
+E, [2013-12-30T18:13:34.836102 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
+E, [2013-12-30T18:13:34.836130 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
+E, [2013-12-30T18:13:34.836158 #10437] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T18:13:34.836186 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
+E, [2013-12-30T18:13:34.836222 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
+E, [2013-12-30T18:13:34.836253 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
+E, [2013-12-30T18:13:34.836281 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
+E, [2013-12-30T18:13:34.836309 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
+E, [2013-12-30T18:13:34.836347 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
+E, [2013-12-30T18:13:34.836378 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:119:in `converge'
+E, [2013-12-30T18:13:34.836408 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
+E, [2013-12-30T18:13:34.836437 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
+E, [2013-12-30T18:13:34.836466 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
+E, [2013-12-30T18:13:34.836495 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
+E, [2013-12-30T18:13:34.836525 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:308:in `block in exec_action'
+E, [2013-12-30T18:13:34.836563 #10437] ERROR -- Kitchen: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2013-12-30T18:13:34.836592 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:305:in `exec_action'
+E, [2013-12-30T18:13:34.836621 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:108:in `block (2 levels) in <class:CLI>'
+E, [2013-12-30T18:13:34.836648 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
+E, [2013-12-30T18:13:34.836678 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
+E, [2013-12-30T18:13:34.836706 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
+E, [2013-12-30T18:13:34.836734 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
+E, [2013-12-30T18:13:34.836763 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
+E, [2013-12-30T18:13:34.836793 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2013-12-30T18:13:34.836822 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2013-12-30T18:13:34.836857 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
+E, [2013-12-30T18:13:34.836885 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
+E, [2013-12-30T18:13:34.836917 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
+E, [2013-12-30T18:13:34.836946 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
+E, [2013-12-30T18:13:34.836975 #10437] ERROR -- Kitchen: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
+E, [2013-12-30T18:13:34.837005 #10437] ERROR -- Kitchen: ----------------------
+I, [2013-12-30T23:51:18.356245 #10869]  INFO -- Kitchen: -----> Starting Kitchen (v1.0.0)
+I, [2013-12-30T23:51:19.318561 #10869]  INFO -- Kitchen: -----> Destroying <default-centos-58>...
+I, [2013-12-30T23:51:20.251139 #10869]  INFO -- Kitchen: -----> Kitchen is finished. (0m1.89s)

@@ -19,9 +19,9 @@
 #
 
 hostsfile_entry '127.0.0.1' do
-  hostname  fqdn
+  hostname node['desired_fqdn']
   aliases [
-    hostname,
+    node['desired_hostname'],
     'localhost',
     'localhost.localdomain',
     'localhost4',
@@ -30,9 +30,9 @@ hostsfile_entry '127.0.0.1' do
 end
 
 hostsfile_entry '::1' do
-  hostname  fqdn
+  hostname node['desired_fqdn']
   aliases [
-    hostname,
+    node['desired_hostname'],
     'localhost',
     'localhost.localdomain',
     'localhost6',
@@ -43,12 +43,12 @@ end
 replace_or_add 'redhat sysconfig network hostname' do
   path '/etc/sysconfig/network'
   pattern 'HOSTNAME=.*'
-  line "HOSTNAME=#{hostname}"
+  line "HOSTNAME=#{node['desired_hostname']}"
 end
 
-execute "hostname #{hostname}" do
-  command "/bin/hostname #{hostname}"
-  not_if "test `hostname` = #{hostname}"
+execute "hostname #{node['desired_hostname']}" do
+  command "/bin/hostname #{node['desired_hostname']}"
+  not_if "test `hostname` = #{node['desired_hostname']}"
   notifies :reload, 'ohai[reload_hostname]'
   notifies :reload, 'ohai[reload_fqdn]'
 end

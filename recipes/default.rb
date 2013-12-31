@@ -45,25 +45,25 @@ else
   if node.name.split('.').count >= 3
     dnsdomainname = node.name.split('.').pop(2).join('.')
     hostname = node.name.split('.')[0..(node.name.split('.').count - 3)].join('.')
-    fqdn = [hostname, dnsdomainname].join('.')
-    hostname = fqdn if node['fqdn_as_hostname']
+    node['desired_fqdn'] = [hostname, dnsdomainname].join('.')
+    node['desired_hostname'] = fqdn if node['fqdn_as_hostname']
   end
 
   if node.name.split('.').count == 2
-    hostname = node.name
-    fqdn = hostname
+    node['desired_hostname'] = node.name
+    node['desired_fqdn'] = hostname
   end
 
   if node.name.split('.').count == 1
-    hostname = "#{node.name}.example.com"
-    fqdn = hostname
+    node['desired_hostname'] = "#{node.name}.example.com"
+    node['desired_fqdn'] = hostname
   end
 end
 
 binding.pry
 
-Chef::Log.info("hostname: #{hostname}")
-Chef::Log.info("fqdn: #{fqdn}")
+Chef::Log.info("desired_hostname: #{node['desired_hostname']}")
+Chef::Log.info("desired_fqdn: #{node['desired_fqdn']}")
 
 case node['platform_family']
 
