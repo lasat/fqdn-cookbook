@@ -18,9 +18,14 @@
 # limitations under the License.
 #
 
+Chef::Log.info("desired_hostname: #{node['desired_hostname']}")
+Chef::Log.info("desired_fqdn: #{node['desired_fqdn']}")
+
 case node['platform_family']
 
 when 'rhel'
+  include_recipe 'fqdn::_rhel'
+when 'fedora'
   include_recipe 'fqdn::_rhel'
 when 'debian'
   include_recipe 'fqdn::_debian'

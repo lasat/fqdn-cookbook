@@ -18,24 +18,12 @@
 # limitations under the License.
 #
 
-# Calculate hostname and FQDN based on the node.name
-
-if node.name.split('.').count >= 3
-  dnsdomainname = node.name.split('.').pop(2).join('.')
-  hostname = node.name.split('.')[0..(node.name.split('.').count - 3)].join('.')
-  fqdn = [hostname, dnsdomainname].join('.')
-  hostname = fqdn if node['fqdn_as_hostname']
-end
-
-if node.name.split('.').count <= 2
-  hostname = node.name
-  fqdn = hostname
-end
+machine_fqdn = MachineFqdn.new node
 
 hostsfile_entry '127.0.0.1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost4',
@@ -44,9 +32,9 @@ hostsfile_entry '127.0.0.1' do
 end
 
 hostsfile_entry '127.0.1.1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost4',
@@ -55,9 +43,9 @@ hostsfile_entry '127.0.1.1' do
 end
 
 hostsfile_entry '::1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost6',
@@ -66,9 +54,9 @@ hostsfile_entry '::1' do
 end
 
 hostsfile_entry 'ff02::1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost6',
@@ -76,25 +64,15 @@ hostsfile_entry 'ff02::1' do
   ]
 end
 
-# needed because File::Util::FileEdit won't operate on empty or
-# non-existant files. (fix that)
-file '/etc/hostname' do
-  action :create
-  mode '00644'
-  owner 'root'
-  content 'localhost\n'
-  not_if '/usr/bin/test -f /etc/hostname'
-end
-
 replace_or_add 'debian network hostname' do
   path '/etc/hostname'
   pattern 'localhost'
-  line "#{hostname}"
+  line machine_fqdn.hostname
 end
 
-execute "hostname #{hostname}" do
-  command "/bin/hostname #{hostname}"
-  not_if "test `hostname` = #{hostname}"
+execute "hostname #{machine_fqdn.fqdn}" do
+  command "/bin/hostname #{machine_fqdn.hostname}"
+  not_if "test `hostname` = #{machine_fqdn.hostname}"
   notifies :reload, 'ohai[reload_hostname]'
   notifies :reload, 'ohai[reload_fqdn]'
 end

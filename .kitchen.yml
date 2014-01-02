@@ -50,8 +50,6 @@ platforms:
     flavor_id: 63
     region_id: 4
     ssh_key_ids: <%= ENV['DIGITAL_OCEAN_SSH_KEY_IDS'] %>
-  run_list:
-  - recipe[apt]
 
 - name: ubuntu-1204
   driver_plugin: digitalocean
@@ -60,8 +58,6 @@ platforms:
     flavor_id: 63
     region_id: 4
     ssh_key_ids: <%= ENV['DIGITAL_OCEAN_SSH_KEY_IDS'] %>
-  run_list:
-  - recipe[apt]
 
 - name: ubuntu-1304
   driver_plugin: digitalocean
@@ -70,8 +66,6 @@ platforms:
     flavor_id: 63
     region_id: 4
     ssh_key_ids: <%= ENV['DIGITAL_OCEAN_SSH_KEY_IDS'] %>
-  run_list:
-  - recipe[apt]
 
 - name: ubuntu-1310
   driver_plugin: digitalocean
@@ -80,10 +74,12 @@ platforms:
     flavor_id: 63
     region_id: 4
     ssh_key_ids: <%= ENV['DIGITAL_OCEAN_SSH_KEY_IDS'] %>
-  run_list:
-  - recipe[apt]
 
 suites:
-  - name: default
+  - name: machine_fqdn
     run_list:
-      - recipe[fqdn::default]
+      - recipe[fqdn_test::machine_fqdn]
+
+  - name: machine_fqdn_as_hostname
+    run_list:
+      - recipe[fqdn_test::machine_fqdn_as_hostname]

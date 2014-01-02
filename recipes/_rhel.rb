@@ -18,26 +18,12 @@
 # limitations under the License.
 #
 
-# Calculate hostname and FQDN based on the node.name
-if node.name.split('.').count >= 3
-  dnsdomainname = node.name.split('.').pop(2).join('.')
-  hostname = node.name.split('.')[0..(node.name.split('.').count - 3)].join('.')
-  fqdn = [hostname, dnsdomainname].join('.')
-  hostname = fqdn if node['fqdn_as_hostname']
-end
-
-if node.name.split('.').count <= 2
-  hostname = node.name
-  fqdn = hostname
-end
-
-Chef::Log.info("hostname: #{hostname}")
-Chef::Log.info("fqdn: #{fqdn}")
+machine_fqdn = MachineFqdn.new node
 
 hostsfile_entry '127.0.0.1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost4',
@@ -46,9 +32,9 @@ hostsfile_entry '127.0.0.1' do
 end
 
 hostsfile_entry '::1' do
-  hostname  fqdn
+  hostname machine_fqdn.fqdn
   aliases [
-    hostname,
+    machine_fqdn.hostname,
     'localhost',
     'localhost.localdomain',
     'localhost6',
@@ -59,12 +45,12 @@ end
 replace_or_add 'redhat sysconfig network hostname' do
   path '/etc/sysconfig/network'
   pattern 'HOSTNAME=.*'
-  line "HOSTNAME=#{hostname}"
+  line "HOSTNAME=#{machine_fqdn.hostname}"
 end
 
-execute "hostname #{hostname}" do
-  command "/bin/hostname #{hostname}"
-  not_if "test `hostname` = #{hostname}"
+execute "hostname #{node['desired_hostname']}" do
+  command "/bin/hostname #{machine_fqdn.hostname}"
+  not_if "test `hostname` = #{machine_fqdn.hostname}"
   notifies :reload, 'ohai[reload_hostname]'
   notifies :reload, 'ohai[reload_fqdn]'
 end

@@ -1,5 +1,5 @@
 site :opscode
 
 metadata
-cookbook 'line'
-cookbook 'apt'
+
+cookbook 'fqdn_test', path: 'test/fixtures/cookbooks/fqdn_test'

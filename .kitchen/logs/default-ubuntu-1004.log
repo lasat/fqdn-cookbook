@@ -1,112 +1,0 @@
-I, [2013-12-21T20:25:45.718225 #47096]  INFO -- default-ubuntu-1004: -----> Cleaning up any prior instances of <default-ubuntu-1004>
-I, [2013-12-21T20:25:45.718447 #47096]  INFO -- default-ubuntu-1004: -----> Destroying <default-ubuntu-1004>...
-I, [2013-12-21T20:25:45.719145 #47096]  INFO -- default-ubuntu-1004: Finished destroying <default-ubuntu-1004> (0m0.00s).
-I, [2013-12-21T20:25:45.719830 #47096]  INFO -- default-ubuntu-1004: -----> Testing <default-ubuntu-1004>
-I, [2013-12-21T20:25:45.720047 #47096]  INFO -- default-ubuntu-1004: -----> Creating <default-ubuntu-1004>...
-I, [2013-12-21T20:25:46.331640 #47096]  INFO -- default-ubuntu-1004: Digital Ocean instance <894079> created.
-I, [2013-12-21T20:26:13.746706 #47096]  INFO -- default-ubuntu-1004: (server ready)
-I, [2013-12-21T20:26:27.160255 #47096]  INFO -- default-ubuntu-1004: (ssh ready)
-
-I, [2013-12-21T20:26:27.161406 #47096]  INFO -- default-ubuntu-1004: Finished creating <default-ubuntu-1004> (0m41.44s).
-I, [2013-12-21T20:26:27.161584 #47096]  INFO -- default-ubuntu-1004: -----> Converging <default-ubuntu-1004>...
-I, [2013-12-21T20:26:27.163514 #47096]  INFO -- default-ubuntu-1004: Preparing files for transfer
-I, [2013-12-21T20:26:27.164642 #47096]  INFO -- default-ubuntu-1004: Resolving cookbook dependencies with Berkshelf...
-I, [2013-12-21T20:26:27.267215 #47096]  INFO -- default-ubuntu-1004: Removing non-cookbook files before transfer
-I, [2013-12-21T20:26:27.933410 #47096]  INFO -- default-ubuntu-1004: -----> Installing Chef Omnibus (latest)
-I, [2013-12-21T20:26:27.933522 #47096]  INFO -- default-ubuntu-1004: downloading https://www.opscode.com/chef/install.sh
-I, [2013-12-21T20:26:27.933571 #47096]  INFO -- default-ubuntu-1004:   to file /tmp/install.sh
-I, [2013-12-21T20:26:27.933627 #47096]  INFO -- default-ubuntu-1004: trying wget...
-I, [2013-12-21T20:26:28.131496 #47096]  INFO -- default-ubuntu-1004: Downloading Chef  for ubuntu...
-I, [2013-12-21T20:26:28.131575 #47096]  INFO -- default-ubuntu-1004: downloading https://www.opscode.com/chef/metadata?v=&prerelease=false&p=ubuntu&pv=10.04&m=x86_64
-I, [2013-12-21T20:26:28.131619 #47096]  INFO -- default-ubuntu-1004:   to file /tmp/install.sh.889/metadata.txt
-I, [2013-12-21T20:26:28.131649 #47096]  INFO -- default-ubuntu-1004: trying wget...
-I, [2013-12-21T20:26:28.271545 #47096]  INFO -- default-ubuntu-1004: url	https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_11.8.2-1.ubuntu.10.04_amd64.deb
-I, [2013-12-21T20:26:28.271639 #47096]  INFO -- default-ubuntu-1004: md5	421a9739bf76382ecdf588a8c82eb996
-I, [2013-12-21T20:26:28.271689 #47096]  INFO -- default-ubuntu-1004: sha256	2cb29f64c3f1e49da648adefa444a20cbec6a15c60a8703b4cc5c25ed1a97dc9
-I, [2013-12-21T20:26:28.281163 #47096]  INFO -- default-ubuntu-1004: downloaded metadata file looks valid...
-I, [2013-12-21T20:26:28.281241 #47096]  INFO -- default-ubuntu-1004: downloading https://opscode-omnibus-packages.s3.amazonaws.com/ubuntu/10.04/x86_64/chef_11.8.2-1.ubuntu.10.04_amd64.deb
-I, [2013-12-21T20:26:28.281273 #47096]  INFO -- default-ubuntu-1004:   to file /tmp/install.sh.889/chef__amd64.deb
-I, [2013-12-21T20:26:28.281302 #47096]  INFO -- default-ubuntu-1004: trying wget...
-I, [2013-12-21T20:26:29.821378 #47096]  INFO -- default-ubuntu-1004: Checksum compare with sha256sum succeeded.
-I, [2013-12-21T20:26:29.821466 #47096]  INFO -- default-ubuntu-1004: Installing Chef 
-I, [2013-12-21T20:26:29.821512 #47096]  INFO -- default-ubuntu-1004: installing with dpkg...
-I, [2013-12-21T20:26:29.850601 #47096]  INFO -- default-ubuntu-1004: Selecting previously deselected package chef.
-I, [2013-12-21T20:26:29.850690 #47096]  INFO -- default-ubuntu-1004: (Reading database ... 
-(Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%I, [2013-12-21T20:26:29.912026 #47096]  INFO -- default-ubuntu-1004: (Reading database ... 95%(Reading database ... 100%(Reading database ... 17007 files and directories currently installed.)
-I, [2013-12-21T20:26:29.912123 #47096]  INFO -- default-ubuntu-1004: Unpacking chef (from .../install.sh.889/chef__amd64.deb) ...
-I, [2013-12-21T20:26:33.433831 #47096]  INFO -- default-ubuntu-1004: Setting up chef (11.8.2-1.ubuntu.10.04) ...
-I, [2013-12-21T20:26:33.434486 #47096]  INFO -- default-ubuntu-1004: Thank you for installing Chef!
-I, [2013-12-21T20:26:33.434596 #47096]  INFO -- default-ubuntu-1004: 
-I, [2013-12-21T20:26:33.552204 #47096]  INFO -- default-ubuntu-1004: Transfering files to <default-ubuntu-1004>
-I, [2013-12-21T20:26:43.471090 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Forking chef instance to converge...
-I, [2013-12-21T20:26:43.540614 #47096]  INFO -- default-ubuntu-1004: Starting Chef Client, version 11.8.2[0m
-I, [2013-12-21T20:26:43.540700 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: *** Chef 11.8.2 ***
-I, [2013-12-21T20:26:43.540744 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Chef-client pid: 963
-I, [2013-12-21T20:26:43.980000 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Setting the run_list to ["recipe[apt]", "recipe[fqdn::default]"] from JSON
-I, [2013-12-21T20:26:43.980100 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Run List is [recipe[apt], recipe[fqdn::default]]
-I, [2013-12-21T20:26:43.980159 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Run List expands to [apt, fqdn::default]
-I, [2013-12-21T20:26:43.980196 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Starting Chef Run for default-ubuntu-1004
-I, [2013-12-21T20:26:43.980226 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Running start handlers
-I, [2013-12-21T20:26:43.980257 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] INFO: Start handlers complete.
-I, [2013-12-21T20:26:43.980706 #47096]  INFO -- default-ubuntu-1004: Compiling Cookbooks...[0m
-I, [2013-12-21T20:26:43.980787 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] ERROR: Running exception handlers
-I, [2013-12-21T20:26:43.980839 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] ERROR: Exception handlers complete
-I, [2013-12-21T20:26:43.980891 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
-I, [2013-12-21T20:26:43.980943 #47096]  INFO -- default-ubuntu-1004: Chef Client failed. 0 resources updated[0m
-I, [2013-12-21T20:26:43.981305 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] ERROR: Cookbook apt not found. If you're loading apt from another cookbook, make sure you configure the dependency in your metadata
-I, [2013-12-21T20:26:44.002959 #47096]  INFO -- default-ubuntu-1004: [2013-12-22T01:26:43+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
-E, [2013-12-21T20:26:44.113868 #47096] ERROR -- default-ubuntu-1004: Converge failed on instance <default-ubuntu-1004>.
-E, [2013-12-21T20:26:44.114033 #47096] ERROR -- default-ubuntu-1004: ------Exception-------
-E, [2013-12-21T20:26:44.114099 #47096] ERROR -- default-ubuntu-1004: Class: Kitchen::ActionFailed
-E, [2013-12-21T20:26:44.114155 #47096] ERROR -- default-ubuntu-1004: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
-E, [2013-12-21T20:26:44.114207 #47096] ERROR -- default-ubuntu-1004: ---Nested Exception---
-E, [2013-12-21T20:26:44.114256 #47096] ERROR -- default-ubuntu-1004: Class: Kitchen::SSHFailed
-E, [2013-12-21T20:26:44.114306 #47096] ERROR -- default-ubuntu-1004: Message: SSH exited (1) for command: [sudo -E chef-solo --config /tmp/kitchen/solo.rb --json-attributes /tmp/kitchen/dna.json  --log_level info]
-E, [2013-12-21T20:26:44.114360 #47096] ERROR -- default-ubuntu-1004: ------Backtrace-------
-E, [2013-12-21T20:26:44.114388 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:110:in `rescue in run_remote'
-E, [2013-12-21T20:26:44.114413 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:106:in `run_remote'
-E, [2013-12-21T20:26:44.114438 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:47:in `block in converge'
-E, [2013-12-21T20:26:44.114462 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/ssh.rb:47:in `initialize'
-E, [2013-12-21T20:26:44.114496 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `new'
-E, [2013-12-21T20:26:44.114542 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/driver/ssh_base.rb:42:in `converge'
-E, [2013-12-21T20:26:44.114570 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `public_send'
-E, [2013-12-21T20:26:44.114595 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `block in perform_action'
-E, [2013-12-21T20:26:44.114619 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `call'
-E, [2013-12-21T20:26:44.114643 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:308:in `synchronize_or_call'
-E, [2013-12-21T20:26:44.114667 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:283:in `block in action'
-E, [2013-12-21T20:26:44.114691 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
-E, [2013-12-21T20:26:44.114715 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:282:in `action'
-E, [2013-12-21T20:26:44.114739 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:273:in `perform_action'
-E, [2013-12-21T20:26:44.114764 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:256:in `converge_action'
-E, [2013-12-21T20:26:44.114788 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:246:in `block in transition_to'
-E, [2013-12-21T20:26:44.114812 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `each'
-E, [2013-12-21T20:26:44.114837 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:245:in `transition_to'
-E, [2013-12-21T20:26:44.114860 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:141:in `verify'
-E, [2013-12-21T20:26:44.114884 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:170:in `block in test'
-E, [2013-12-21T20:26:44.114913 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
-E, [2013-12-21T20:26:44.114957 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/instance.rb:166:in `test'
-E, [2013-12-21T20:26:44.115001 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `public_send'
-E, [2013-12-21T20:26:44.115028 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `block in run_serial'
-E, [2013-12-21T20:26:44.115052 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `map'
-E, [2013-12-21T20:26:44.115076 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:314:in `run_serial'
-E, [2013-12-21T20:26:44.115100 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:146:in `block in test'
-E, [2013-12-21T20:26:44.115124 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/rubies/ruby-1.9.3-p448/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
-E, [2013-12-21T20:26:44.115148 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:137:in `test'
-E, [2013-12-21T20:26:44.115172 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/command.rb:27:in `run'
-E, [2013-12-21T20:26:44.115196 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/invocation.rb:120:in `invoke_command'
-E, [2013-12-21T20:26:44.115257 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/cli.rb:288:in `invoke_task'
-E, [2013-12-21T20:26:44.115315 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor.rb:363:in `dispatch'
-E, [2013-12-21T20:26:44.115358 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/thor-0.18.1/lib/thor/base.rb:439:in `start'
-E, [2013-12-21T20:26:44.115398 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `block in <top (required)>'
-E, [2013-12-21T20:26:44.115437 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/lib/kitchen/errors.rb:81:in `with_friendly_errors'
-E, [2013-12-21T20:26:44.115476 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/gems/test-kitchen-1.0.0/bin/kitchen:13:in `<top (required)>'
-E, [2013-12-21T20:26:44.115515 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `load'
-E, [2013-12-21T20:26:44.115554 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/kitchen:23:in `<main>'
-E, [2013-12-21T20:26:44.115593 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `eval'
-E, [2013-12-21T20:26:44.115634 #47096] ERROR -- default-ubuntu-1004: /Users/someara/.rvm/gems/ruby-1.9.3-p448@oct17/bin/ruby_executable_hooks:15:in `<main>'
-E, [2013-12-21T20:26:44.115673 #47096] ERROR -- default-ubuntu-1004: ----------------------
-I, [2013-12-21T20:38:08.312545 #47440]  INFO -- default-ubuntu-1004: -----> Destroying <default-ubuntu-1004>...
-I, [2013-12-21T20:38:10.885348 #47440]  INFO -- default-ubuntu-1004: Digital Ocean instance <894079> destroyed.
-I, [2013-12-21T20:38:10.886127 #47440]  INFO -- default-ubuntu-1004: Finished destroying <default-ubuntu-1004> (0m2.57s).
-I, [2013-12-21T22:07:39.773180 #47959]  INFO -- default-ubuntu-1004: -----> Destroying <default-ubuntu-1004>...
-I, [2013-12-21T22:07:39.773738 #47959]  INFO -- default-ubuntu-1004: Finished destroying <default-ubuntu-1004> (0m0.00s).
