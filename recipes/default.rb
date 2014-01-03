@@ -24,9 +24,9 @@ Chef::Log.info("desired_fqdn: #{node['desired_fqdn']}")
 case node['platform_family']
 
 when 'rhel'
-  include_recipe 'fqdn::_rhel'
+  include_recipe_now 'fqdn::_rhel'
 when 'fedora'
-  include_recipe 'fqdn::_rhel'
+  include_recipe_now 'fqdn::_rhel'
 when 'debian'
-  include_recipe 'fqdn::_debian'
+  include_recipe_now 'fqdn::_debian'
 end
