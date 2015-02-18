@@ -67,4 +67,4 @@ debian.rb
 rhel.rb
 
 # Author
-Author:: Sean OMeara (<someara@opscode.com>)
+Author:: Sean OMeara (<someara@chef.io>)
