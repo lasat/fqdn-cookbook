@@ -64,10 +64,9 @@ hostsfile_entry 'ff02::1' do
   ]
 end
 
-replace_or_add 'debian network hostname' do
-  path '/etc/hostname'
-  pattern 'localhost'
-  line machine_fqdn.hostname
+file '/etc/hostname' do
+  content machine_fqdn.hostname
+  not_if "test `hostname` = #{machine_fqdn.hostname}"
 end
 
 execute "hostname #{machine_fqdn.fqdn}" do
