@@ -25,7 +25,7 @@ hostsfile_entry '127.0.0.1' do
   aliases [
     machine_fqdn.hostname,
     'localhost',
-    'localhost4'
+    'localhost.localdomain'
   ]
 end
 
